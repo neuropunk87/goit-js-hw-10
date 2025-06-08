@@ -1,0 +1,154 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to right, #43C6AC, #191654);
+    background: linear-gradient(to right, #43C6AC, #191654);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+p {
+    margin: 16px 0 30px 16px;
+}
+
+#datetime-picker {
+    padding: 6px 12px;
+    font-size: 20px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    margin-left: 35px;
+}
+
+button[data-start],
+button[data-stop] {
+    padding: 6px 24px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    color: #999;
+    cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 5px;
+}
+
+button[data-start]:enabled {
+    background: #3f51b5;
+    color: #fff;
+    border-color: #3f51b5;
+    cursor: pointer;
+}
+
+button[data-stop]:enabled {
+    background: #b71c1c;
+    color: #fff;
+    border-color: #b71c1c;
+    cursor: pointer;
+}
+
+button[data-start]:disabled,
+button[data-stop]:disabled {
+    opacity: 0.5;
+    background: #f2f2f2;
+    color: #999;
+    cursor: not-allowed;
+}
+
+button[data-start]:hover:enabled {
+    background: #303f9f;
+    color: #fff;
+}
+
+button[data-stop]:hover:enabled {
+    background: #7f0000;
+    color: #fff;
+}
+
+.timer {
+    display: flex;
+    gap: 35px;
+    margin: 35px 0 0 25px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #212121;
+    min-width: 85px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 4vw;
+    }
+
+    p {
+        margin: 12px 0 20px 6px;
+    }
+
+    #datetime-picker {
+        width: 100%;
+        min-width: 0;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    button[data-start],
+    button[data-stop] {
+        width: 100%;
+        margin: 8px 0 0 0;
+        font-size: 18px;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .timer {
+        flex-direction: column;
+        gap: 18px;
+        align-items: stretch;
+        margin: 28px 0 0 0;
+    }
+
+    .field {
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .value {
+        font-size: 32px;
+        min-width: 46px;
+        text-align: center;
+    }
+
+    .label {
+        font-size: 13px;
+        margin-left: 0;
+        align-self: center;
+        letter-spacing: 1px;
+    }
+}

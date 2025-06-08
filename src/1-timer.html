@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./css/timer.css" />
+</head>
+
+<body>
+    <p>
+        <a href="index.html" style="text-decoration: none;">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                <path d="M10 12L6 8L10 4" stroke="#000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+    </p>
+
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+    <button type="button" data-stop>Stop</button>
+
+    <div class="timer">
+        <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+
+    <script type="module" src="./js/1-timer.js"></script>
+</body>
+
+</html>
