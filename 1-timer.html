@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer</title>
+  <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/1-timer-CRl9G5ZP.css">
+</head>
+
+<body>
+    <p>
+        <a href="index.html" style="text-decoration: none;">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                <path d="M10 12L6 8L10 4" stroke="#000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+    </p>
+
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+    <button type="button" data-stop>Stop</button>
+
+    <div class="timer">
+        <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
